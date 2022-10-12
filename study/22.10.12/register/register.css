@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* 초기화코드   */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#ccc;
+    padding:20px;
+}
+
+#signup{
+    background-color: white;
+    border:1px solid;
+    border-radius: 1%;
+    width: 450px;
+    padding: 20px;
+}
+
+#signup fieldset{       /**/
+    
+}
+
+#signup fieldset:last-of-type{  /*버튼 영역*/
+
+}
+
+#signup legend{     /*로그인 정보 / 개인 정보*/
+
+}
+
+#signup ul li {     /*모든 li*/
+    list-style-type: none;
+}
+
+#signup label{      /*라벨 텍스트*/
+
+}
+
+#signup button{     /*버튼*/
+
+}
+
+#signup input[type=text], #signup input[type=password], #signup input[type=tel], #sign input[type=email]{
+    /*input 태그*/
+
+}
+
+#signup input[required]{       /*input태그 중 required 속성을 가진 요소들*/
+    border-color: red;
+}
+
+#signup input[readonly]{       /*input태그 중 readonly 속성을 가진 요소들*/
+
+}
+
+#signup button:hover{       /*마우스 버튼 위에 hover 했을 시*/
+    background-color:black;
+    color:white;
+}
