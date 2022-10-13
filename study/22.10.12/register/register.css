@@ -71,6 +71,7 @@ body{
 
 #signup input:not([type=radio]){
     border: 1px solid #ccc;
+    
 }
 
 #signup input[required]{       /*input태그 중 required 속성을 가진 요소들*/
