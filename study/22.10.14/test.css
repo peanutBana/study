@@ -27,7 +27,7 @@ a{
 .bt_wrap a{                     /* 글쓰기 버튼 부분*/
     display: inline-block;
     min-width: 80px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     padding : 10px;
     border: 1px solid black;
     border-radius: 2px;
@@ -84,11 +84,11 @@ a{
 }
 
 .board_page a{              /*하단 페이지 번호*/
-     display: inline-block;
+    display: inline-block;
     width: 32px;
     height: 32px;
     /* box-sizing: border-box; */
-    /* border-left: 0; */
+    border-left: 0;
     line-height: 32px;
 }
 
@@ -111,28 +111,28 @@ a{
     color: #fff;
 }
 
-@media all and (max-width: 1000px){
-    /*width가 768~1000px 일 때*/
+@media all and (max-width: 1000px){         /*width가 768~1000px 일 때*/
+    /*max-width 1000px의 95% 차지 */ 
     .wrap{
         width: 95vw;
     }
 }
-@media all and (max-width: 767px){
-    /*width가 0~767px 일 때*/
+@media all and (max-width: 767px){          /*width가 0~767px 일 때*/
+    /*max-width 767px의 95% 차지 */ 
     .wrap{
         width: 95vw;
     }
-
+    /*번호*/
     .board_list th:nth-of-type(1),
     .board_list td:nth-of-type(1){
         display: none;
     }
-
+    /*글쓴이*/
     .board_list th:nth-of-type(3),
     .board_list td:nth-of-type(3){
         display: none;
     }
-
+    /*작성일*/
     .board_list th:nth-of-type(4),
     .board_list td:nth-of-type(4){
         display: none;

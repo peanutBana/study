@@ -1,0 +1,90 @@
+*{padding: 0; margin: 0 ;}
+a{text-decoration: none !important;}
+ul li{list-style: none;}
+img{border: 0;}
+header, footer, section{box-sizing: border-box;}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+        display: flex;
+}
+.logo{
+    width: 35vh;
+    margin: 20px;
+}
+.nav{
+    width: 65vh;
+    margin-top: 20px;
+}
+.nav .nav__top ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5rem;
+    margin-bottom: 1px;
+}
+.nav .nav__top ul input{
+    width: 100px;
+}
+.nav .nav__top ul :last-child{
+    /* border: 1px solid; */
+}
+.nav .nav__bottom ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.nav .nav__bottom ul{
+
+}
+
+/******************************************************/
+section{
+
+}
+.slider{
+    
+}
+.slider__button{
+    margin-top: 20px;
+    width: 250px; 
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.slider__login__button{
+    width: 100px;
+    background-color: orangered;
+    text-align: center;
+    padding:5px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.slider__auth__button{
+    width: 100px;
+    background-color: rgb(41, 29, 219);
+    text-align: center;
+    padding:5px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.slider__content{
+    height: 250px;
+}
+.section__nav{
+    background-color: rgb(98, 98, 243);
+    color: #fff;
+}
+.seciton__nav  ul  {
+    display: inline-block;
+}
+
+
+
+footer{
+    background-color: lightcoral;
+}
