@@ -1,55 +1,55 @@
 @charset "utf-8";
+/*기본 세팅*/
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-
 html{
     font-size: 10px;
 }
-
-ul li {
+ul li{
     list-style: none;
 }
-
 a{
+    color:#000;
     text-decoration: none;
-    color: black;
 }
-/*전체 wrap 중앙고정*/
+
+/*wrap*/
 .wrap{
     width: 1000px;
     margin: 0 auto;
 }
 
-/* board table 영역*/
-.board{
+/*table*/
+
+table.board{
     width: 100%;
     border-top: 1px solid #000;
     border-collapse: collapse;
+}
+
+table.board caption{
     font-size: 1.5rem;
+    margin: 30px;
 }
-/*table caption 자유게시판 영역*/
-.board caption.title{
-    padding: 30px;
-}
-/*테이블 내부 border + padding, 텍스트 중앙 정렬*/
-.board th, td{
-    border-bottom: 1px solid ;
-    padding: 10px;
+
+table th, td{
     text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    font-size: 1.4rem;
 }
-/*table 제목부분 hover*/
-.board td.title a:hover{
+td.title a:hover{
     text-decoration: underline;
 }
 
-/* 글쓰기 버튼 부분*/
+/*글쓰기 버튼*/
 .bt_write{
     margin-top: 30px;
     text-align: right;
 }
-/* 글쓰기 버튼 a */
+
 .bt_write a{
     display: inline-block;
     min-width: 80px;
@@ -60,59 +60,62 @@ a{
     font-size: 1.4rem;
     text-align: center;
 }
+
 .bt_write a:hover{
     text-decoration: underline;
 }
 
-.board_page{
-    text-align: center;
-    margin-top: 30px;
+/*paging*/
+.paging{
     display: flex;
     justify-content: center;
 }
 
-.board_page a{
+.paging a{
     display: inline-block;
     width: 32px;
     height: 32px;
     line-height: 32px;
+    text-align: center;
 }
 
-.board_page a:hover{
+.paging a:hover{
     text-decoration: underline;
 }
 
-.board_page a.bt{
-    font-size: 1.2rem;
+.paging a.bt{
     letter-spacing: -1px;
+    font-size: 1.2rem;
 }
-
-.board_page a.num.on{
-    background: #000;
-    color: #fff;
+.paging a.num:hover{
+    color:#fff;
+    background-color: #000;
     border: 1px solid #000;
 }
 
-@media all and (max-width: 1000px){
+/*media quary*/
+@media all and (max-width:1000px){
     .wrap{
         width: 95vw;
     }
 }
-@media all and (max-width: 767px){
+@media all and (max-width:767px){
     .wrap{
         width: 95vw;
     }
 
     .board th:nth-of-type(1),
     .board td:nth-of-type(1){
-        display:none;
+        display: none;
     }
+
     .board th:nth-of-type(3),
     .board td:nth-of-type(3){
-        display:none;
+        display: none;
     }
+    
     .board th:nth-of-type(4),
     .board td:nth-of-type(4){
-        display:none;
+        display: none;
     }
 }
