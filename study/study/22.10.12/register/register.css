@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* 초기화코드   */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#ccc;
+    padding:20px;
+}
+
+#signup{
+    background-color: #fff;
+    border:1px solid #222;
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px;
+}
+
+#signup fieldset{       /**/
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+#signup fieldset:last-of-type{
+    border:none;
+}
+
+#signup legend{     /*로그인 정보 / 개인 정보*/
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+#signup ul li {     /*개인정보, 로그인 정보 li*/
+    line-height: 30px;
+    list-style-type: none;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+
+}
+
+#signup label{      /*라벨 텍스트*/
+    float: left;
+    font-size: 13px;
+    width: 110px;
+}
+
+
+#signup button{     /*버튼*/
+    border: 1px solid #222;
+    border-radius: 20%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    padding: 7px 25px;
+    margin: 0 auto;
+}
+
+
+#signup input[type=text], #signup input[type=password], #signup input[type=tel], #signup input[type=email]{
+    /*input 태그*/
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    width: 200px;
+}
+
+#signup input:not([type=radio]){
+    border: 1px solid #ccc;
+    
+}
+
+#signup input[required]{       /*input태그 중 required 속성을 가진 요소들*/
+    border: 1px solid #ff0000;
+}
+
+#signup input[readonly]{       /*input태그 중 readonly 속성을 가진 요소들*/
+    border: none;
+}
+
+#signup button:hover{       /*마우스 버튼 위에 hover 했을 시*/
+    background-color:#222;
+    color:#fff;
+}

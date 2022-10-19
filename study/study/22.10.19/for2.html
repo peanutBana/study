@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>for</title>
+</head>
+<body>
+    <script>
+        const todos = ['우유 구매', '매일 확인', '헬스'];
+
+        for(let i=0 ; i<todos.length ; i ++){
+            console.log(`${i+1}번째 할 일은 ${todos[i]}`);
+        }
+
+        for(let i in todos){
+            console.log(`${i+1}번째 할일은 ${todos[i]}`);
+        }
+
+        for(const todo of todos){
+            console.log(`오늘의 할 일은 ${todo}`);
+        }
+    </script>
+</body>
+</html>

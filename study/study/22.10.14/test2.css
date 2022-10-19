@@ -1,0 +1,118 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/*전체 wrap 중앙고정*/
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* board table 영역*/
+.board{
+    width: 100%;
+    border-top: 1px solid #000;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+/*table caption 자유게시판 영역*/
+.board caption.title{
+    padding: 30px;
+}
+/*테이블 내부 border + padding, 텍스트 중앙 정렬*/
+.board th, td{
+    border-bottom: 1px solid ;
+    padding: 10px;
+    text-align: center;
+}
+/*table 제목부분 hover*/
+.board td.title a:hover{
+    text-decoration: underline;
+}
+
+/* 글쓰기 버튼 부분*/
+.bt_write{
+    margin-top: 30px;
+    text-align: right;
+}
+/* 글쓰기 버튼 a */
+.bt_write a{
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.bt_write a:hover{
+    text-decoration: underline;
+}
+
+.board_page{
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.board_page a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.board_page a:hover{
+    text-decoration: underline;
+}
+
+.board_page a.bt{
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+}
+
+.board_page a.num.on{
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+@media all and (max-width: 1000px){
+    .wrap{
+        width: 95vw;
+    }
+}
+@media all and (max-width: 767px){
+    .wrap{
+        width: 95vw;
+    }
+
+    .board th:nth-of-type(1),
+    .board td:nth-of-type(1){
+        display:none;
+    }
+    .board th:nth-of-type(3),
+    .board td:nth-of-type(3){
+        display:none;
+    }
+    .board th:nth-of-type(4),
+    .board td:nth-of-type(4){
+        display:none;
+    }
+}
