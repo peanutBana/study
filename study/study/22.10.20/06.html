@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>setInterval / setTimeout</title>
+</head>
+<body>
+    <script>
+        //1000 => 1초
+        // setTimeout(()=>{
+        //     console.log("2초 후에 한번 실행됩니다.")
+        // }, 2000)
+
+        let cnt = 0;
+        let start = setInterval (()=>{
+            console.log(`0.5초 마다 한번씩 실행됩니다. ${cnt}`)
+            cnt++;
+        },500)
+
+        //setInerval 변수명 clearInterval 안에 작성
+        setTimeout(()=>{
+            console.log(`타이머 종료`)
+            clearInterval(start)
+        }, 5000)
+    </script>
+</body>
+</html>

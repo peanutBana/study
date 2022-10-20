@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>callBack</title>
+</head>
+<body>
+    <script>
+        // const numbers = [1,2,3,4,5,6,7,8,9,10]
+        // // forEach
+        // // value, index, array값 가져올 수 있음
+        // let res = numbers.forEach(function(value){
+        //     console.log(value)
+        //     return value
+        // })
+        // console.log(res)
+
+        // //map => return값들을 모아서 배열로 만들어줌
+        // let result = numbers.map(function(value,index,array){
+        //     return value
+        // })
+        // console.log(result)
+        
+
+        // //filter => return값이 참인 데이터만 모아 배열로 출력
+        // const evenNumbers = numbers.filter(function(value){
+        //     return value % 2 === 0
+        // })
+        // console.log(evenNumbers)
+
+        const days = ["Mon","Tue","Wed","Thr","Fri","Sat","Sun"]
+
+        // const addSmile = day =>`^^${day}`
+
+        const smile = days.map((value,index) => `#${index}`)        //i에 days의 값들을 전달
+        console.log(smile)
+    </script>
+</body>
+</html>

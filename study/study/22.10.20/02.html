@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //rest_parameter
+        function sample(a,b,...items){
+            console.log(a,b,items);
+        }
+        //items에 해당하는 부분은 배열로 출력
+        sample(1,2);
+        sample(1,2,3);
+        sample(1,2,3,4);
+    </script>
+</body>
+</html>

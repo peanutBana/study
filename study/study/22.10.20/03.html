@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>03</title>
+</head>
+<body>
+    <script>
+        // function sample(...items){
+        //     console.log(items);
+        // }
+        // const array = [1,2,3,4]
+        // console.log(`전개 연산자를 사용하지 않을 때: ${sample(array)}}`)
+        // //배열 안에 배열 형식으로 출력
+        // console.log(`전개 연산자를 사용할 때: ${sample(...array)}}`)
+
+        //3.기본 매개변수
+        // function earnings(name, wage=9000, hours=40){
+        //     console.log(`${name}님의 급여정보`)
+        //     console.log(`시급: ${wage}원`)
+        //     console.log(`근무 시간: ${hours}`)
+        //     console.log(`급여: ${wage * hours}원`)
+        //     console.log(`======================`)
+        // }
+        // earnings('구름')
+        // earnings("별",10000)
+        // earnings("달", 10000, 52)
+
+        //4.구버전 자바스크립트에서 매개변수 구하기(참고)
+        function sample(){
+            console.log(arguments)  //arguments: 매개변수를 배열로 받아옴
+            for (let i=0 ; i<arguments.length ; i++){
+                console.log(`${i}번째: ${arguments[i]}`)
+            }
+        }
+        sample(1,2)
+        sample(1,2,3)
+        sample(1,2,3,4)
+    </script>
+</body>
+</html>

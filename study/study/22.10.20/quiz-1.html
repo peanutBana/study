@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isLeapYear(year){
+            const year = parseInt(prompt("년도를 입력하세요 : "));
+            if(year%4 == 0 && year%100 != 0 || year%400 == 0){
+                let msg = console.log(`${year}년은 윤년입니다.`);
+            }
+            else{
+                let msg = console.log(`${year}년은 윤년이 아닙니다.`);
+            }
+            return msg
+        }
+        
+    </script>
+</body>
+</html>

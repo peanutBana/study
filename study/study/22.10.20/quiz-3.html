@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [9,14,25,7,33,12,5,17]
+        function searchMin(arr){
+            var min = arr[0]
+            for(let i of arr){
+                if(i<min){
+                    min = i
+                }
+            }
+            return min;
+        }
+        console.log(searchMin(arr));
+
+        //const arr = [9,14,25,7,33,12,5,17]
+        // function searchMin(first, ...rests){
+        //     let output;
+        //     let items;
+
+        //     if(Array.isArray(first)){
+        //         output = first[0]
+        //         items = first
+        //     }
+        //     else if(typeof(first) === 'number'){
+        //         output = first
+        //         items = rests
+        //     }
+        //     for(const item of items){
+        //         if(output > item){
+        //             output = item;
+        //         }
+        //     }
+        //     return output
+        // }
+        // console.log(searchMin(arr));
+    </script>
+</body>
+</html>

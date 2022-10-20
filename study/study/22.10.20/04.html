@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>callBack</title>
+</head>
+<body>
+    <script>
+        //콜백함수 => 매개변수로 전달하는 함수
+        function callThreeTimes(callback){
+            for(let i=0 ; i<3 ; i++){
+                callback(i)
+            }
+        }
+        function print(i){
+            console.log(`${i}번째 함수 호출`)
+        }
+        callThreeTimes(print)
+    </script>
+</body>
+</html>
