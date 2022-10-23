@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //3. prototype 방식 , 객체 생성자 방식에 비해 메모리 절약됨 (가장 많이 사용함?)
+        //객체 = 속성 + 메소드(함수)
+       function Pet(p_name,p_age,p_type){
+           this.name = p_name;
+           this.age = p_age
+           this.type = p_type
+       }
+
+       //객체명.prototype.함수명 = function(){}
+       Pet.prototype.eat = function(food){
+            console.log(`${this.name}이가 ${food}을 먹습니다.`)
+       }
+       Pet.prototype.age_print = function(){
+            console.log(`${this.name}이는 ${this.age}살 입니다.`)
+       }
+       Pet.prototype.type_print = function(){
+            console.log(`종은 ${this.type} 입니다.`)
+       }
+
+        //객체 생성
+       const pet1 = new Pet("구름",7,"러시안 블루")
+       const pet2 = new Pet("별",1, "요크셔테리어")
+       const pet3 = new Pet("달",4, "스코티시 폴드")
+       const pet4 = new Pet("태양",13, "말티즈")
+
+       console.log(pet1)
+       pet2.eat("밥")
+       pet2.age_print()
+       pet2.type_print()
+       console.log(pet2.name)
+    </script>
+</body>
+</html>

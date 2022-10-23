@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //2. 객체 생성자 방식
+        //객체 = 속성 + 메소드(함수)
+        function Pet(p_name,p_age,p_type){      
+            //this => Pet객체를 가리는 자기 참조 변수(self-reference variable)
+            this.name = p_name;
+            this.age = p_age;
+            this.type = p_type;
+            this.eat = function(food){
+                console.log(`${this.name}는(은) ${food}을(를) 먹습니다.` );
+            };
+            this.ageprint = function(){
+                console.log(`${this.name}는 ${this.age}살 입니다.`)
+            }
+            this.printtype = function(){
+                console.log(`종은 ${this.type} 입니다.`)
+            }
+        }
+        //객체를 쓰는 이유 : 코드의 상산성이 높아진다.
+        const pet1 = new Pet("구름이",5,'페르시안');  
+        console.log(pet1)         //객체 생성(매개변수 입력 순서에 따라 데이터 적용됨)
+        pet1.eat("츄르")
+        pet1.ageprint()
+        pet1.printtype()
+        
+        
+        const pet2 = new Pet("별이",1,'요크셔테리어');
+        console.log(pet2)
+        pet2.eat("소고기")
+        pet2.ageprint()
+        pet2.printtype()
+        
+
+    </script>
+</body>
+</html>

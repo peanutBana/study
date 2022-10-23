@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data</title>
+</head>
+<body>
+    <script>
+        const n = new Number(273.55)
+        console.log(n.toFixed(1))       //273.6
+        const d = new Date()
+
+        console.log(Number(n))      //273.55
+        console.log(n)              //273.55
+        console.log(d)              //Fri Oct 21 2022 14:19:00 GMT+0900 (한국 표준시)
+        console.log(`오늘은 ${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 `)    //21
+
+        const s1 = new String("안녕하세요 반갑습니다 하하")
+        const s2 = "   안녕하세요 반갑습니다 하하   "
+        let s3 = "집에";
+        let s4 = "가고싶다";
+        let s5 = 'i wanna go home'
+        for(let i=0 ; i<s1.length ; i++){
+            console.log(s1[i])
+        }
+
+        console.log(s1.split("",2))   //공백을 기준으로 split하여 배열로 n개 중에서 2개만 return
+        console.log(s2.trim())
+
+        console.log(s3.concat(' ',s4))
+
+        console.log(s1.slice(1,4));     //1번인덱스 ~ 3번인덱스 이전까지 출력
+
+        console.log(s1.indexOf("요"))   //0:안/1:녕/2:하/3:세/4:요 ==> 4 if (-1 ==> 찾는 문자 없음)
+
+        console.log(s1.substring(1,4))
+
+        console.log(s5.toUpperCase())     //lower => upper
+
+        console.log(s1.toString())
+
+        const b = new Boolean(true)
+        console.log(b)
+
+    </script>
+</body>
+</html>

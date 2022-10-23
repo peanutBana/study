@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //배열, 객체 데이터(JSON)
+        const product = {
+            name : '건조망고',
+            type : '당절임',
+            weight : 3,
+            arr : [1,2,3,4,5]
+        }
+        
+        const product2 = [{
+            name : '건조바나나',
+            type : '바나나절임',
+            weight : 5
+        },{
+            name : '건조망고',
+            type : '망고절임',
+            weight : 3,
+        }]
+
+        // const product3 = [{
+        //     name : '건조딸기',
+        //     weight : 5,
+        //     type : '딸기절임',
+        // },{
+        //     name : '건조망고',
+        //     type : '망고절임',
+        //     weight : 3,
+        // }]
+
+        const product3 = '{"result" : true, :"count" : 42}'
+        const obj = JSON.parse(product3)
+
+        console.log(JSON.stringify(product2))       //객체 데이터 => 문자열로 바꿔줌ㅋ
+        console.log(product2[0])
+        console.log(product2[1])
+        console.log(obj)
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //1. 리터럴 방식(6-1-1.html)
+        // 객체 = 속성 + 메소드(함수)        //속성 추가 나이, 종
+        const pet = {
+            name : "구름",
+            age : 1,
+            race : "치와와",
+            // sleep : function(where){
+            //     console.log(`구름이가 ${where}에서 잠들었습니다.`)
+            // },
+            // eat : function(food){
+            //     console.log(`구름이가 ${food}을(를) 먹습니다.`)
+            // }
+            eat : (food) => {
+                console.log(`구름이가 ${food}를 잘 먹습니다.`)
+            },
+            sleep: (where) => {
+                console.log(`구름이가 ${where}에서 잡니다.`)
+            }
+        }
+
+        console.log(pet)
+
+        pet.eat('사료')
+        console.log(`구름이는 ${pet.age}살`)
+        console.log(pet.race)
+        pet.sleep('선반 위')
+        
+    </script>
+</body>
+</html>
