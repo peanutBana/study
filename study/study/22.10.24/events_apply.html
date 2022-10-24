@@ -22,18 +22,17 @@
         const conButton = document.querySelector('#connect')
         const disButton = document.querySelector('#disconnect')
 
-        const listener = function(){
+        const listener = function(){        //listener라는 함수 지정
             //클릭 시 실행되길 원하는 코드
-            counter++
-            h1.textContent =  `클릭횟수 : ${counter}`
+            counter++               // counter 1씩 증가
+            h1.textContent =  `클릭횟수 : ${counter}`   //  h1에 counter 출력
         }
-
-        h1.addEventListener('click',listener)
+        h1.addEventListener('click',listener)       //h1에 클릭 시 이벤트 지정
 
         conButton.addEventListener('click', function(){
-            if(isConnect === false){
-                h1.addEventListener('click',listener)
-                p.textContent = "이벤트 연결 상태 : 연결"
+            if(isConnect === false){        //만약 connect상태 아니라면
+                h1.addEventListener('click',listener)       //h1에 클릭시 이벤트 지정 ==> counter++ & 출력
+                p.textContent = "이벤트 연결 상태 : 연결"       
                 isConnect = true
             }
         })

@@ -8,10 +8,10 @@
         <span class="inner">테스트입니다.</span>
     </div>
     <script>
-        const header = document.createElement('h1')
+        const h1 = document.createElement('h1')
         const inner = document.querySelector('.inner')
        
-        inner.parentNode.appendChild(header)
+        inner.parentNode.appendChild(h1)            //inner(span태그)아래 자식요소로 h1태그 넣음
 
         console.log(inner.nextSibling)
         inner.nextSiblling.nextSiblling.innerHTML = "test"

@@ -24,12 +24,12 @@
     <script>
         //1. 라디오 이벤트
         const output = document.querySelector('#output')
-        const radios = document.querySelectorAll('[name=pet]')
+        const radios = document.querySelectorAll('[name=pet]')  //name 속성값이 pet인 요소들만
 
         radios.forEach(function(radio){
-            radio.addEventListener('change',function(e){
+            radio.addEventListener('change',function(e){        //radio 요소가 바뀔 때
                 const current = e.currentTarget
-                if (current.checked){       //체그가 되어있는지 확인
+                if (current.checked){       //체크가 되어있는지 확인
                     output.textContent = `${current.value}`
                 }
             })
@@ -41,10 +41,12 @@
         
 
         checkbox.addEventListener('change',(e) => {
-            if(e.currentTarget.checked){
+            if(e.currentTarget.checked){            //e에 checkbox 요소 저장
                 chk_output.textContent = "체크!"
             }
-            else{}
+            else{
+                chk_output.textContent = ""
+            }
         })
 
     </script>

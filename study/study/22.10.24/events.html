@@ -15,24 +15,24 @@
         let counter = 0
         const h1 = document.querySelector('h1')
         //addEventListener('이벤트 명', '함수')
-        /*
+        
         h1.addEventListener('click', function(){
             //클릭 시 실행되길 원하는 코드
             counter++
             h1.textContent =  `클릭횟수 : ${counter} `
         })
-        */  
-        // h1.addEventListener('click', () => {})  
-        const listener = function(){
-            //클릭 시 실행되길 원하는 코드
-            counter++
-            h1.textContent =  `클릭횟수 : ${counter} `
-        }
-
-        h1.addEventListener('click',listener)
-
         //removeEventListener('지우고싶은 함수명',콜백 함수)
-        //h1.removeEventListener('click',listener)
+        h1.removeEventListener('click',listener)
+
+        // h1.addEventListener('click', () => {})  
+        // const listener = function(){
+        //     //클릭 시 실행되길 원하는 코드
+        //     counter++
+        //     h1.textContent =  `클릭횟수 : ${counter} `
+        // }
+
+        // h1.addEventListener('click',listener)
+
     </script>
 </body>
 </html>
