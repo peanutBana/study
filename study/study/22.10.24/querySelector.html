@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QuerySelector</title>
+</head>
+<body>
+    <h1 class="txt">안녕하세요</h1>
+    <h1 class="txt">안녕하세요</h1>
+    <h1 class="txt">안녕하세요</h1>
+    <h1 class="txt">안녕하세요</h1>
+    <script>
+        // const header = document.querySelector('h1')
+        // //문서안에 h1 요소를 선택함
+        // console.log(header)
+
+        // //요소.style.css속성(카멜표기법) = 'css.속성값'
+        // header.style.color = "red"
+        // header.style.backgroundColor = 'hotpink'
+        // header.style.display = 'inline'
+
+
+        //document.querySelectorAll('선택자') -> 해당 요소를 모두 가져온다.
+        const headers = document.querySelectorAll('.txt')
+        console.log(headers)
+        //sol1
+        for(let i=0 ; i<headers.length ; i++){
+            headers[i].style.color = "red"
+            headers[i].style.backgroundColor = 'hotpink'
+            //headers[i].style.display = 'inline'
+            console.log(headers[i])
+        }
+        //sol2
+        // for(header of headers){
+        //     headers.style.fontWeight = "bolder"
+        // }
+        //sol3
+        headers.forEach(function(header){
+            headers.style.textAlign = "center"
+        })
+        
+
+    </script>    
+</body>
+</html>

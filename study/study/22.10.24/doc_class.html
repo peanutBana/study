@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <span class="inner">테스트입니다.</span>
+    </div>
+    <script>
+        const header = document.createElement('h1')
+        const box = document.querySelector('.inner')
+       
+        box.parentNode.appendChild(header)
+
+        console.log(box.nextSibling)
+        box.nextSiblling.innerHTML = "test"
+    </script>
+</body>
+</html>

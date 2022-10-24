@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        첫번째 div
+        <span class="inner">테스트 입니다.</span>
+    </div>
+    <script>
+        //요소 생성
+        const header = document.createElement('h1')
+        console.log(header)
+        //문서 안에 body 안에 자식요소로 header(h1태그)를 넣어줌
+        document.body.appendChild(header)
+        
+        //querySelector로 가져온 요소에 적용 가능
+        const box = document.querySelector('.box')
+        const spanTag = document.querySelector('span')
+        box.appendChild(header)
+
+        //box 안에 span 요소 제거
+        box.removeChild(spanTag)
+    </script>
+</body>
+</html>
