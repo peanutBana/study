@@ -9,12 +9,12 @@
     </div>
     <script>
         const header = document.createElement('h1')
-        const box = document.querySelector('.inner')
+        const inner = document.querySelector('.inner')
        
-        box.parentNode.appendChild(header)
+        inner.parentNode.appendChild(header)
 
-        console.log(box.nextSibling)
-        box.nextSiblling.innerHTML = "test"
+        console.log(inner.nextSibling)
+        inner.nextSiblling.nextSiblling.innerHTML = "test"
     </script>
 </body>
 </html>

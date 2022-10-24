@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <select>
+        <option>떡볶이</option>
+        <option>오뎅</option>
+        <option>순대</option>
+        <option>튀김</option>
+    </select>
+    <p>선택 : 떡볶이</p>
+    <script>
+        const select = document.querySelector('select')
+        const p = document.querySelector('p')
+
+        select.addEventListener('change', function(e){
+            const options = e.currentTarget.options     //select박스 안의 options에 관한 정보 
+            console.log(options)
+            const index = e.currentTarget.options.selectedIndex     //선택한 요소의 index번호 저장 
+            console.log(index)
+            
+            p.textContent = `선택 : ${options[index].value}`
+            console.log(options[index])
+        })
+    </script>
+</body>
+</html>
