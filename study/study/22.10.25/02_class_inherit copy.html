@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        //객체 = 속성 + 메소드
+        class Square{
+            #length     //length를 private으로 사용하겠다고 정의
+            constructor(length){
+                
+                this.#length = length
+            }
+            //메소드
+            //사각형의 둘레 구하기
+            getPerimeter(){
+                return 4 * this.#length 
+            }
+            //사각형의 넓이 구하기
+            getArea(){
+                return this.#length ** 2
+            }
+        }
+    
+        square = new Square(20)
+        square.length = -10
+        console.log(square.getArea())
+        console.log(square.getPerimeter())
+    </script>
+</body>
+</html>

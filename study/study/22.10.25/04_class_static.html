@@ -7,6 +7,8 @@
     <script>
         //속성과 메소드로 구성
         class Pet{
+            static color = 'black'      //정적속성(static 속성)
+
             //constructor : 생성자 함수
             constructor(nameVal, ageVal, catVal){   
                 this.name = nameVal
@@ -17,20 +19,35 @@
             eat(food){
                 console.log(`${this.name}이가 ${food}를 먹습니다. `)
             }
+            //나이 출력 함수
             agePrint(){
                 console.log(`${this.name}이는 ${this.age}살 입니다.`)
             }
+            //종 출력 함수
             catPrint(){
                 console.log(`${this.name}이는 ${this.cat}입니다.`)
             }
+            //static 메소드
+            static colorPrint(){
+                console.log(`색상은 ${this.color} 입니다.`)
+            }
+        
         }
-        const pet1 = new Pet('구름', 7, '코숏')
-        const pet2 = new Pet('별', 1, '러시안 블루')
-        console.log(pet1)
-        console.log(pet2)
-        pet1.eat("츄르")
-        pet1.agePrint()
-        pet1.catPrint()
+        // const pet1 = new Pet('구름', 7, '코숏')
+        // const pet2 = new Pet('별', 1, '러시안 블루')
+        console.log(Pet.agePrint)
+        console.log(Pet.color)
+        console.log(Pet.colorPrint())
+        
+        // console.log(pet1)
+        // pet1.eat("츄르")
+        // pet1.agePrint()
+        // pet1.catPrint()
+
+        // console.log(pet2)
+        // pet2.eat("츄르")
+        // pet2.agePrint()
+        // pet2.catPrint()
     </script>
 </body>
 </html>
