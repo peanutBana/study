@@ -28,7 +28,7 @@
 
         radios.forEach(function(radio){
             radio.addEventListener('change',function(e){        //radio 요소가 바뀔 때
-                const current = e.currentTarget
+                const current = e.currentTarget                 //current에 최근에 target된 radio요소 저장
                 if (current.checked){       //체크가 되어있는지 확인
                     output.textContent = `${current.value}`
                 }
