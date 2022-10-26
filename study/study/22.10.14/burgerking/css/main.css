@@ -376,7 +376,6 @@ section .con {
 	.banner__content > .phone {
 		/* 410px ÷ 1140px */
 		width: 36.96%;
-
 		/* 50px ÷ 1140px */
 		padding-right: 4.38% ;
 		padding-top: 75px;
