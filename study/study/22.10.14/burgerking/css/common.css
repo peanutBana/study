@@ -87,6 +87,13 @@
    background-color: transparent;
 }
 
+.mobile.close {
+   position: absolute;
+   top: 20%;
+   left: 20%;
+   font-size: 1.2rem;
+}
+
 .header__Mnav > .trigger > .mobile.close {
    position: absolute;
    top: 20px;
@@ -103,6 +110,8 @@
    padding: 20px 0 0 20px;
    margin-bottom: 100px;
 }
+
+
 
 .header__Mnav .Mmenu__main > li {
    padding: 20px 0;
@@ -163,21 +172,59 @@
    width: 50px;
 }
 
-.header__nav > .menu > .delivery-order {
-   text-align: right;
+.header__nav nav {
+   width : calc(100% - 168px);
 }
+
 
 .header__nav .menu__main {
    display: none;
 }
+.header__panel{
+   width: 280px;
+   display:none;
+}
 
-.header__nav .delivery-order > .button {
+.header__nav > .menu > .delivery-order {
+   width: 168px;
+   /*원래 디폴트 값으로 돌아오게 함*/
+   text-align: unset;
+}
+
+
+.header__nav > .menu > .delivery-order > .button {
    border-radius: 35px;
    font-size: 0.5em;
    /* 우선순위 적용 */
    padding: 8px;
    font-weight: bold;   
 }
+
+.header__nav > .menu .main__list{
+   position: relative;
+}
+
+.header__nav > .menu .main__list .list__drop{
+   display: none;
+   /*absolute: relative를 기준으로 위치*/
+   position: absolute;
+   top: 60px;
+   width: 232px;
+   height: 260px;
+}
+
+.header__nav > .menu .main__list .list__drop > li{
+   padding: 5px 5px 5px 0;
+}
+
+.header__nav > .menu .main__list .list__drop > li > a{
+   font-size: 0.9rem;
+   font-family: 'Nanum Gothic Coding', monospace, sans-serif;
+   font-weight: bold;
+   color: rgb(26,26,26,);
+}
+
+
 
 .footer{
    height: 350px;
