@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<title>Document</title>
+<style>
+    .aqua{background-color: aqua;}
+    .red{background-color: red;}
+    .green{background-color: green;}
+    .yelllow{background-color: yellow;}
+</style>
+<body>
+    <div>
+        <ul>
+            <li id="list_1">
+                <span id="child1">1번 자식입니다.</span>
+                <span>2번 자식입니다.</span>
+                <span id="child3">3번 자식입니다.</span>
+                <span>4번 자식입니다.</span>
+                <span id="child5">5번 자식입니다.</span>
+            </li>
+            <li id="list_2">list2</li>
+            <li id="list_3">list3</li>
+        </ul>
+        <a href="https://www.naver.com" target="_black">클릭</a>
+        <p class="red">안녕하세요 헬로우</p>
+    </div>
+    
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+
+            //설정해놓은 클래스 추가
+            //$('p').addClass('aqua')
+
+            //적용된 클래스 삭제
+            //$("p").removeClass('red')
+
+            //if 이미 적용된 다른클래스가 있다면 적용해주고 else 이미 클래스가 적용되어있다면 삭제
+            $("p").toggleClass('green')
+            console.log($("p").hasClass('green'));
+
+
+
+
+            // //선택한 요소의 자식요소 그대로 출력
+            // var result = $('#list_1').html()    
+            // console.log(result);
+            // //선택한 요소 바로아래 자식요소로 넣기
+            // $("#list_1").html("<a href='#'>클릭</a>")
+
+            // var result = $('#list_1').html()    
+            // //선택한 요소 바로아래 자식요소로 문자 그대로 넣기
+            // $("#list_1").text("<a href='#'>클릭</a>")
+
+            //a태그에 속성이 href인 요소의 **속성값 가져오기**
+            //console.log($('a').attr("target"));
+
+            // //속성 설정
+            // $('a').attr("href","https://www.ezenac.co.kr/")
+            // $('a').attr(
+            //     {
+            //         "href":"https://www.ezenac.co.kr/",
+            //         "target":"_parent"
+            //     }
+            // )
+            // //속성 삭제
+            // $("a").removeAttr("target")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<title>Document</title>
+<body>
+    <div id="outer_wrap">
+        <h1>콘텐츠 탐색 선택자</h1>
+        <section id="inner1">
+            <h1>inner1</h1>
+            <p class="test"><span>con1</span></p>
+            <p><span>con2</span></p>
+            <p><span>con3</span></p>
+        </section>
+        <section id="inner2">
+            <h1>inner2</h1>
+            <p><span>con4</span></p>
+            <p><span>con5</span></p>
+            <p class="test2"><span>con6</span></p>
+        </section>
+    </div>    
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            $('#inner1 p :contains(con1)').css({'background':'1px solid red'})
+            //$('#inner1 p :has(span)').css({'background-color':'1px solid blue'})
+            //$('#outer_wrap).contents().css({0})
+            // /$("#inner2 p").not(":first").css({'background':'red'})
+            //$('#inner1').find('.test').css({'background':'red'})
+            
+            console.log($('.test2').is(":visible"));
+        })
+    </script>
+</body>
+</html>

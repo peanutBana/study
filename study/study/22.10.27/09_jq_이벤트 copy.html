@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <button class="btn1">버튼1</button>
+    </p>
+    <p>내용1</p>
+    <p>
+        <button class="btn2">버튼2</button>
+    </p>
+    <p>내용2</p>
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+           $(".btn1").click(()=>{
+                $('.btn1').parent().next().css({'color':'red'})     //내용1 red
+           })
+
+           $('.btn2').on({      //.on은 이벤트 여러게 설정할 때 사용
+            'mouseover focus' : ()=>{
+                $('.btn2').parent().next().css({'color':'blue'}) 
+            },
+            'mouseout blur':()=>{       //blur:포커스 나갈 때
+                $('.btn2').parent().next().css({'color':'black'}) 
+            }
+           })
+
+           /*
+           //이벤트 제거
+           $('.btn1').off('click')
+           $('.btn2').off('mouseover focus')
+           */
+
+        })
+    </script>
+</body>
+</html>
