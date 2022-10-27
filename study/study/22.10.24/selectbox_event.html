@@ -15,14 +15,14 @@
         const select = document.querySelector('select')
         const p = document.querySelector('p')
 
-        select.addEventListener('change', function(e){
-            const options = e.currentTarget.options     //select박스 안의 options에 관한 정보 리스트로 출력
-            console.log(options)
+        select.addEventListener('change', function(e){  //select요소에 change 이벤트 지정
+            const op = e.currentTarget.options     //select박스 안의 options에 관한 정보 리스트로 출력
+            console.log(op)
             const index = e.currentTarget.options.selectedIndex     //선택한 요소의 index번호 저장 
             console.log(index)
             
-            p.textContent = `선택 : ${options[index].value}`
-            console.log(options[index])
+            p.textContent = `선택 : ${op[index].value}`
+            console.log(op[index])
         })
     </script>
 </body>

@@ -6,19 +6,20 @@
 <title>Document</title>
 <link rel="stylesheet" href="./library/fontawesome-free-6.2.0-web/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="./library/animate/animate.min.css">
 <link rel="stylesheet" href="./css/main.css">
 
 </head>
 <body>
 	<header class="header">
 		<!-- 모바일 메뉴 -->
-		<div class="header__Mnav">
+		<div class="header__Mnav animate__animated animate__slideInLeft">
 			<div class="trigger">
 				<button class="mobile close"><i class="fas fa-times fa-lg"></i></button>
 			</div>
 			<nav class="Mmenu">
 				<ul class="Mmenu__main">
-					<li>
+					<li onclick="showHide(this)">
 						<span>메뉴소개</span>
 						<span><i class="fas fa-chevron-right"></i></span>
 						<ul class="Mlist__drop animate__animated animate__fadeIn">
@@ -32,14 +33,14 @@
 							<li><a href="#">독퍼</a></li>
 						</ul>
 					</li>
-					<li>
+					<li onclick="showHide(this)">
 						<span>매장소개</span>
 						<span><i class="fas fa-chevron-right"></i></span>
 						<ul class="Mlist__drop animate__animated animate__fadeIn">
 							<li><a href="#">매장찾기</a></li>
 						</ul>
 					</li>
-					<li>
+					<li onclick="showHide(this)">
 						<span>이벤트</span>
 						<span><i class="fas fa-chevron-right"></i></span>
 						<ul class="Mlist__drop animate__animated animate__fadeIn">
@@ -47,7 +48,7 @@
 							<li><a href="#">신규매장</a></li>
 						</ul>
 					</li>
-					<li>
+					<li onclick="showHide(this)">
 						<span>브랜드스토리</span>
 						<span><i class="fas fa-chevron-right"></i></span>
 						<ul class="Mlist__drop animate__animated animate__fadeIn">
@@ -56,7 +57,7 @@
 							<li><a href="#">버거킹 NEWS</a></li>
 						</ul>
 					</li>
-					<li>
+					<li onclick="showHide(this)">
 						<span>고객센터</span>
 						<span><i class="fas fa-chevron-right"></i></span>
 						<ul class="Mlist__drop animate__animated animate__fadeIn">
@@ -333,5 +334,6 @@
 	<!-- 라이브러리 -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<script src="./js/main.js"></script>
+	<script src="./js/common.js"></script>
 </body>
 </html>
