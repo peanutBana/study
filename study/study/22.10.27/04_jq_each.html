@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<title>Document</title>
+<body>
+    <ul class="wrap">
+        <li class="list_1">list1</li>
+        <li class="list_2">list2</li>
+        <li class="list_3">list3</li>
+    </ul>
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            var obj = [
+                {'area':'서울','name':'라이언'},
+                {'area':'인천','name':'어피치'},
+                {'area':'부산','name':'죠르디'}
+            ]
+
+            //$('li').index($('.list_2')) => li태그 중에서 .list_2의 인덱스 번호 return
+            // var idxNum = $('li').index($('.list_2'))        
+            // console.log(idxNum)
+
+            // var names = ["김부장", "정부장", "이부장"]
+
+            // //inArray('요소',배열) ==> idx번호 return
+            // var idxNum = $.inArray("정부장", names)     
+            // console.log(idxNum)
+
+            // //isArray(n) => n이 배열인지 아닌지 true or false return 
+            // console.log($.isArray(names))
+
+            //js의 filter와 비슷하다.
+            // var arr2 = $.grep(obj,function(val,idx){        
+            //     if(val.area == "인천"){
+            //         //true일 때 해당 객체를 arr2에 넣어줌
+            //         return true;
+            //     }else{
+            //         return false
+            //     }
+            // })
+            // console.log(arr2)
+
+            // var arr1 = $.map(obj, function(val, idx){
+            //     if(val.area == '서울')
+            //     return val
+            // })
+            // console.log(arr1)
+
+            // $(obj).each(function(idx, val) {
+            //     console.log(idx, val)
+            // })
+
+            // $('.wrap li').each((i,v) => {
+            //     console.log(i,v)
+            // })
+        })
+    </script>
+</body>
+</html>

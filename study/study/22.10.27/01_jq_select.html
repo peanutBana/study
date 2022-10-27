@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">제목</h1>
+    <h1 class="title">제목</h1>
+    <h1 class="title">제목</h1>
+
+    <ul id="wrap">
+        <li id="list_1">
+            <span id="child1">1번 자식입니다.</span>
+            <span>2번 자식입니다.</span>
+            <span id="child3">3번 자식입니다.</span>
+            <span>4번 자식입니다.</span>
+            <span id="child5">5번 자식입니다.</span>
+        </li>
+        <li id="list_2">list2</li>
+        <li id="list_3">list3</li>
+    </ul>
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            // $('.title').css("color","hotpink");
+            // $('.title').css("font-size","50px");
+            // $('#list_1').parent().css('border','1px solid hotpink') 
+            // $('#list_1').parents().css('border','1px solid hotpink')        //parents => #list_1위 모든 부모태그에 속성 적용
+            // $('#list_1').children().css('border','1px solid hotpink')   //list_1 > span태그에 css속성 적용
+
+            // $('#child2').prev().css('border','1px solid hotpink')       // 이전 요소인 child1에 적용
+            // $('#child2').next().css('border','1px solid skyblue')       // 다음 요소인 child1에 적용
+            //$('#child2').siblings().css('border','1px solid lightgreen')       // 본 요소 제외한 형제들에 적용
+            //$('#child3').prevUntil('#child1').css('border','1px solid lightgreen')       //3번 이전요소만 적용
+            //$('#child3').nextUntil('#child5').css('border','1px solid lightgreen')         //3번 다음 ~5번 이전 요소만 선택
+            $('#child3').closest('#list_1').css('border','1px solid red');        //가장 가까운 상위요소를 가져옴
+
+        })
+
+    </script>
+</body>
+</html>
