@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Async</title>
+</head>
+<body>
+    <script>
+        //await는 async가 붙어있는 함수 안에서 사용 가능ㅋ
+        async function asyncFunc(){
+            let promise = new Promise((resolve,reject)=>{
+                setTimeout(() => {resolve("완료")},1000)
+            })
+            let result = await promise
+            
+            alert(result)
+        }
+        asyncFunc()
+    </script>
+    
+</body>
+</html>
