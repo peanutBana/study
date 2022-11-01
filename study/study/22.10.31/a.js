@@ -1,6 +1,3 @@
-function createMovieContent(){
-    let i = document.createElement('div')
-    i.setAttribute('class','movie__list')
-}
-createMovieContent()
-
+var a = document.createElement('p');
+a.innerHTML = 'hello';
+document.querySelector('#test').appendChild(a);
